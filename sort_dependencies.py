@@ -24,7 +24,7 @@ class SortDependencies:
                     no_dependency_nodes.add(a)
 
         if len(result) != len(self.deps):
-            print("Graph has cycles; It is not a directed acyclic graph ... ")
+            print("Cycles detected. ")
             return None
         else:
             return result
